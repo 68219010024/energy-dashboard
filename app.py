@@ -120,7 +120,7 @@ h1, h2, h3 {{ color: {INK}; letter-spacing: -0.01em; }}
 # 3) โหลดข้อมูล (แคช = โหลดครั้งเดียว)
 # ---------------------------------------------------------------------------
 def find_file(name):
-    for folder in ["data", os.path.join("..", "final"), "final"]:
+    for folder in ["data", os.path.join(".    for folder in ["data", ".", os.path.join("..", "final"), "final"]:.", "final"), "final"]:
         path = os.path.join(os.path.dirname(os.path.abspath(__file__)), folder, name)
         if os.path.exists(path):
             return path
